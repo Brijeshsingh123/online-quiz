@@ -25,25 +25,48 @@ public class MainActivity extends AppCompatActivity {
     private long time_left;
     private int correct=0,wrong=0,score=0,updated=0;
     String question[]={
-            "Q.1. If a Computer has more then one processor then it is konw  as ?",
-            "Q.2. Full form of URL ?",
-            "Q.3. One HiloByte (KB) is equals to ?"
+            "Q.1. Number of primitive data types in Java are ?",
+            "Q.2. What is the size of float and double in java ?",
+            "Q.3. Automatic type conversion is possible in which of the possible cases ?",
+            "Q.4. compareTo() returns?",
+            "Q.5. When an array is passed to a method, what does the method receive?",
+            "Q.6. Select the valid statement to declare and initialize an array?",
+            "Q.7. Arrays in java are?",
+            "Q.8. When is the object created with new keyword?",
+            "Q.9. Identify the corrected definition of a package?",
+            "Q.10.In which of the following is toString() method defined?",
+
     };
     int img[]={
-            R.drawable.download1,
-            R.drawable.download2,
-            R.drawable.download3
+            R.drawable.quiz,
+            R.drawable.quiz2,
+            R.drawable.quiz3,
+            R.drawable.quiz4,
     };
 
     String answer[]={
-            "Multiprocessor",
-            "Uniform Resource Locator",
-            "1,024 bytes"
+            "8",
+            "32 and 64",
+            "int to long",
+            "An int value",
+            "The reference of the array",
+            "int[]A={1,2,3}",
+            "Objects",
+            "At run time",
+            "A package is a collection of classes and interfaces",
+            "Java.lang.object",
     };
     String opstion[]={
-            "Uniprocess","Multiprocessor","MultiThread","Multiprograming",
-            "Uniform Resource Locator","Uniform Resource Location","gysdyg","ydadygad",
-            "1,000 bytes","1,024 bytes","1,064 bytes","1,394 bytes"
+            "6","7","8","9",
+            "32 and 32","32 and 64","64 and 32 ","64 and 64",
+            "byte to long","int to long","Long to int","Short to int",
+            "True","False","An int value","None",
+            "The reference of the array","A copy of the array","Length of the array","Copy of first element",
+            "int[] A={}","int[]A={1,2,3}","int[]A=(1,2,3)","int[][]A={1,2,3}",
+            "Objects","Objects reference","Primitive data type","None",
+            "At run time","At compile time","Depends on code","None",
+            "A package is a collection of classes and interfaces","A package is a collection of classs","A package is a collection of editing tools","A package is a collection of interface",
+            "Java.lang.object","java.lang.util","java.lang.String","None",
     };
     int qIndex=0;
     @Override

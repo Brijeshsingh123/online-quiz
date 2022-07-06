@@ -2,150 +2,156 @@
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
-<androidx.constraintlayout.widget.ConstraintLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@drawable/niceappbg"
-    tools:context=".Result">
-<ScrollView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="@dimen/_10sdp">
+
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    <TextView
-        android:id="@+id/information"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result Of The Test"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_15sdp"
-        android:fontFamily="@font/poppinsregular_400"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:ignore="MissingConstraints" />
-    <pl.droidsonroids.gif.GifImageView
-        android:id="@+id/gif"
-        android:layout_width="wrap_content"
-        android:layout_height="@dimen/_180sdp"
-        android:src="@drawable/gif1"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:paddingStart="@dimen/_10sdp"
-        app:layout_constraintTop_toBottomOf="@+id/information"
-        tools:ignore="MissingConstraints" />
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/root"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="@dimen/_10sdp"
-        android:layout_marginTop="@dimen/_10sdp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/gif"
-        tools:ignore="MissingConstraints">
+        android:layout_height="match_parent"
+        android:background="@drawable/image"
+        tools:context=".Result">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_10sdp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/information"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:fontFamily="@font/poppinsregular_400"
+                    android:text="Result Of The Test"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_20sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:ignore="MissingConstraints" />
+
+                <pl.droidsonroids.gif.GifImageView
+                    android:id="@+id/gif"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_180sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:src="@drawable/quizgif"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/information"
+                    tools:ignore="MissingConstraints" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/root"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:padding="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/gif"
+                    tools:ignore="MissingConstraints">
 
 
-        <TextView
-            android:id="@+id/tvscore"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="10dp"
-            android:fontFamily="@font/poppinsregular_400"
-            android:text="Correct  : -"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintStart_toStartOf="@+id/root"
-            app:layout_constraintTop_toTopOf="@+id/root"
-            tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/tvscore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/poppinsregular_400"
+                        android:text="Correct  : -"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/root"
+                        app:layout_constraintTop_toTopOf="@+id/root"
+                        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/score"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-            android:fontFamily="@font/poppinslight_300"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvscore"
-            app:layout_constraintLeft_toRightOf="@+id/tvscore"
-            app:layout_constraintTop_toTopOf="@+id/tvscore"
-            tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/score"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:fontFamily="@font/poppinslight_300"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvscore"
+                        app:layout_constraintLeft_toRightOf="@+id/tvscore"
+                        app:layout_constraintTop_toTopOf="@+id/tvscore"
+                        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/wrong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/_4sdp"
-            android:fontFamily="@font/poppinsregular_400"
-            android:text="Wrong  : -"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvscore"
-            app:layout_constraintRight_toLeftOf="@+id/tvwrong"
-            app:layout_constraintTop_toTopOf="@+id/tvscore"
-            tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/wrong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_4sdp"
+                        android:fontFamily="@font/poppinsregular_400"
+                        android:text="Wrong  : -"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvscore"
+                        app:layout_constraintRight_toLeftOf="@+id/tvwrong"
+                        app:layout_constraintTop_toTopOf="@+id/tvscore"
+                        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/tvwrong"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/_20sdp"
-            android:fontFamily="@font/poppinslight_300"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintBottom_toBottomOf="@+id/tvscore"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/tvscore"
-            tools:ignore="MissingConstraints" />
+                    <TextView
+                        android:id="@+id/tvwrong"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="@dimen/_20sdp"
+                        android:fontFamily="@font/poppinslight_300"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/tvscore"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/tvscore"
+                        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/question"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:fontFamily="@font/poppinsregular_400"
-            android:text="No of Question : -"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintStart_toStartOf="@+id/tvscore"
-            app:layout_constraintTop_toBottomOf="@+id/tvscore" />
+                    <TextView
+                        android:id="@+id/question"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/poppinsregular_400"
+                        android:text="No of Question : -"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintStart_toStartOf="@+id/tvscore"
+                        app:layout_constraintTop_toBottomOf="@+id/tvscore" />
 
-        <TextView
-            android:id="@+id/tvquestion"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:fontFamily="@font/poppinsregular_400"
-            android:text="0"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintBottom_toBottomOf="@+id/question"
-            app:layout_constraintLeft_toRightOf="@+id/question"
-            app:layout_constraintTop_toBottomOf="@+id/question"
-            app:layout_constraintTop_toTopOf="@+id/question" />
+                    <TextView
+                        android:id="@+id/tvquestion"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_10sdp"
+                        android:fontFamily="@font/poppinsregular_400"
+                        android:text="0"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintBottom_toBottomOf="@+id/question"
+                        app:layout_constraintLeft_toRightOf="@+id/question"
+                        app:layout_constraintTop_toBottomOf="@+id/question"
+                        app:layout_constraintTop_toTopOf="@+id/question" />
 
-        <Button
-            android:id="@+id/btn"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:fontFamily="@font/poppinsregular_400"
-            android:text="Home"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_15sdp"
-            app:layout_constraintEnd_toEndOf="@+id/tvwrong"
-            app:layout_constraintStart_toStartOf="@+id/question"
-            app:layout_constraintTop_toBottomOf="@+id/tvquestion" />
+                    <Button
+                        android:id="@+id/btn"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_20sdp"
+                        android:fontFamily="@font/poppinsregular_400"
+                        android:text="Home"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        app:layout_constraintEnd_toEndOf="@+id/tvwrong"
+                        app:layout_constraintStart_toStartOf="@+id/question"
+                        app:layout_constraintTop_toBottomOf="@+id/tvquestion" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
     </androidx.constraintlayout.widget.ConstraintLayout>
-    </androidx.constraintlayout.widget.ConstraintLayout>
-</ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
